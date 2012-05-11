@@ -18,7 +18,7 @@ public class SortierVergleich {
         s.testeSortierverfahren();
     }
     
-    private int zN = 2000;
+    private int zN = 9000;
     private int[] zufallsZahlen;
     private Random hatRandom;
     private Stoppuhr hatUhr;
