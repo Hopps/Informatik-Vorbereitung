@@ -22,13 +22,9 @@ public class TestCase {
         stapel.fuegeEin(2);
 
         System.out.println((int) stapel.getInhalt());
-
         stapel.entferneKopf();
-
         System.out.println((int) stapel.getInhalt());
-
         stapel.entferneKopf();
-
         System.out.println((int) stapel.getInhalt());
     }
 }
