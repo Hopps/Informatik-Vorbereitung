@@ -1,18 +1,21 @@
-package datenstruckturen;
+package datenstrukturen;
 
-public class Schlange<Type> {
+public class Stapel<Type> {
 
     Knoten Kopf;
 
-    public Schlange() {
+    public Stapel() {
 
     }
 
     public void fuegeEin(Type obj) {
         if(Kopf == null)
-            Kopf = new Knoten(obj);
-        else
-            Kopf.fuegeAn(new Knoten(obj));
+            Kopf = new Stapel.Knoten(obj);
+        else {
+            Knoten pKopf = Kopf;
+            Kopf = new Stapel.Knoten(obj);
+            Kopf.fuegeAn(pKopf);
+        }
     }
 
     public void entferneKopf() {

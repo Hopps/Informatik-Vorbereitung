@@ -1,4 +1,4 @@
-package datenstruckturen;
+package datenstrukturen;
 
 public class TestCase {
 
