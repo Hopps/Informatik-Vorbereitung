@@ -1,6 +1,6 @@
 package datenstruckturen;
 
-public class Schlange {
+public class Schlange<Type> {
 
     Knoten Kopf;
 
@@ -8,7 +8,7 @@ public class Schlange {
 
     }
 
-    public void fuegeEin(Object obj) {
+    public void fuegeEin(Type obj) {
         if(Kopf == null)
             Kopf = new Knoten(obj);
         else
@@ -23,7 +23,7 @@ public class Schlange {
         return Kopf;
     }
 
-    public Object getInhalt() {
+    public Type getInhalt() {
         return Kopf.getInhalt();
     }
 
@@ -31,9 +31,9 @@ public class Schlange {
     class Knoten {
 
         Knoten nachFolger;
-        Object inhalt;
+        Type inhalt;
 
-        public Knoten(Object obj) {
+        public Knoten(Type obj) {
             inhalt = obj;
         }
 
@@ -44,7 +44,7 @@ public class Schlange {
                 nachFolger.fuegeAn(d);
         }
 
-        private Object getInhalt() {
+        private Type getInhalt() {
             return inhalt;
         }
 

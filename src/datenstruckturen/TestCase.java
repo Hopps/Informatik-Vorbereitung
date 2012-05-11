@@ -3,7 +3,7 @@ package datenstruckturen;
 public class TestCase {
 
     public static void main(String[] args) {
-        /*Schlange schlange = new Schlange();
+        Schlange schlange = new Schlange();
 
         schlange.fuegeEin(5);
         schlange.fuegeEin(22165);
@@ -14,8 +14,9 @@ public class TestCase {
 
         schlange.entferneKopf();
 
-        System.out.println((int) schlange.getInhalt());*/
+        System.out.println((int) schlange.getInhalt());
 
+        /**
         Stapel stapel = new Stapel();
         stapel.fuegeEin(5);
         stapel.fuegeEin(22165);
@@ -25,6 +26,6 @@ public class TestCase {
         stapel.entferneKopf();
         System.out.println((int) stapel.getInhalt());
         stapel.entferneKopf();
-        System.out.println((int) stapel.getInhalt());
+        System.out.println((int) stapel.getInhalt());*/
     }
 }
