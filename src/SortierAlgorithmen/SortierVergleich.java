@@ -78,8 +78,7 @@ public class SortierVergleich {
             }
         }
         return pZahlen;
-    }
-    
+    }    
     
     
 }
