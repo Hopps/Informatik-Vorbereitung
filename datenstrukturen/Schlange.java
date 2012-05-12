@@ -5,14 +5,14 @@ public class Schlange<Type> {
     Knoten Kopf;
 
     public Schlange() {
-
     }
 
     public void fuegeEin(Type obj) {
-        if(Kopf == null)
+        if (Kopf == null) {
             Kopf = new Knoten(obj);
-        else
+        } else {
             Kopf.fuegeAn(new Knoten(obj));
+        }
     }
 
     public void entferneKopf() {
@@ -27,7 +27,6 @@ public class Schlange<Type> {
         return Kopf.getInhalt();
     }
 
-
     class Knoten {
 
         Knoten nachFolger;
@@ -38,10 +37,11 @@ public class Schlange<Type> {
         }
 
         private void fuegeAn(Knoten d) {
-            if(nachFolger == null)
+            if (nachFolger == null) {
                 nachFolger = d;
-            else
+            } else {
                 nachFolger.fuegeAn(d);
+            }
         }
 
         private Type getInhalt() {
@@ -51,7 +51,5 @@ public class Schlange<Type> {
         private Knoten getNachFolger() {
             return nachFolger;
         }
-
     }
-
 }

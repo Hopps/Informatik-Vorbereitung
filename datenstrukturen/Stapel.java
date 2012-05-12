@@ -5,13 +5,12 @@ public class Stapel<Type> {
     Knoten Kopf;
 
     public Stapel() {
-
     }
 
     public void fuegeEin(Type obj) {
-        if(Kopf == null)
+        if (Kopf == null) {
             Kopf = new Stapel.Knoten(obj);
-        else {
+        } else {
             Knoten pKopf = Kopf;
             Kopf = new Stapel.Knoten(obj);
             Kopf.fuegeAn(pKopf);
@@ -30,7 +29,6 @@ public class Stapel<Type> {
         return Kopf.getInhalt();
     }
 
-
     class Knoten {
 
         Knoten nachFolger;
@@ -41,10 +39,11 @@ public class Stapel<Type> {
         }
 
         private void fuegeAn(Knoten d) {
-            if(nachFolger == null)
+            if (nachFolger == null) {
                 nachFolger = d;
-            else
+            } else {
                 nachFolger.fuegeAn(d);
+            }
         }
 
         private Type getInhalt() {
@@ -54,7 +53,5 @@ public class Stapel<Type> {
         private Knoten getNachFolger() {
             return nachFolger;
         }
-
     }
-
 }

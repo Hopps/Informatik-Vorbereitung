@@ -9,5 +9,4 @@ package datenstrukturen;
  * @author merlin
  */
 public class Knoten {
-    
 }

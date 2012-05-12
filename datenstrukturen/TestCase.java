@@ -17,15 +17,12 @@ public class TestCase {
         System.out.println((int) schlange.getInhalt());
 
         /**
-        Stapel stapel = new Stapel();
-        stapel.fuegeEin(5);
-        stapel.fuegeEin(22165);
-        stapel.fuegeEin(2);
-
-        System.out.println((int) stapel.getInhalt());
-        stapel.entferneKopf();
-        System.out.println((int) stapel.getInhalt());
-        stapel.entferneKopf();
-        System.out.println((int) stapel.getInhalt());*/
+         * Stapel stapel = new Stapel(); stapel.fuegeEin(5);
+         * stapel.fuegeEin(22165); stapel.fuegeEin(2);
+         *
+         * System.out.println((int) stapel.getInhalt()); stapel.entferneKopf();
+         * System.out.println((int) stapel.getInhalt()); stapel.entferneKopf();
+         * System.out.println((int) stapel.getInhalt());
+         */
     }
 }
