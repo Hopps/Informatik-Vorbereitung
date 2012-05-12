@@ -1,5 +1,5 @@
 package datenstrukturen;
-
+//TEst
 public class Stapel<Type> {
 
     Knoten Kopf;
